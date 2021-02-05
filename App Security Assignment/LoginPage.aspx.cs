@@ -188,7 +188,7 @@ namespace App_Security_Assignment
 
             // To send a GET request to Google along with the response and Secret Key.
             HttpWebRequest req = (HttpWebRequest)WebRequest.Create
-                ("https://www.google.com/recaptcha/api/siteverify?secret=6LfWGEQaAAAAAGkbdL5TdiVUG_9fnfc83v1GjM3q &response=" + captchaResponse);
+                ("https://www.google.com/recaptcha/api/siteverify?secret= &response=" + captchaResponse);
 
             try
             {
