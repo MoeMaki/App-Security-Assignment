@@ -2,10 +2,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     &nbsp;&nbsp;&nbsp;    <table class="nav-justified">
         <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response"/>
-        <script src="https://www.google.com/recaptcha/api.js?render=6LfWGEQaAAAAAIDg9vojoZeYhFMeHJ4FprjvdP_2"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render="></script>
         <script>
             grecaptcha.ready(function () {
-                grecaptcha.execute('6LfWGEQaAAAAAIDg9vojoZeYhFMeHJ4FprjvdP_2', { action: 'Login' }).then(function (token) {
+                grecaptcha.execute('', { action: 'Login' }).then(function (token) {
                     document.getElementById("g-recaptcha-response").value = token;
                 });
             });
